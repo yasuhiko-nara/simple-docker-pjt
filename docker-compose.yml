@@ -3,15 +3,15 @@ services:
   app:
     build:
       context: ./app
-    container_name: app
+    container_name: express-app
     ports:
       - '3000:3000'
     volumes:
       - './app:/usr/src/app'
 
   web:
-    image: nginx:1.17.10
-    container_name: nginx
+    image: nginx:latest #nginx:alpilneだとエラーが起きる
+    container_name: nginx-web
     ports:
       - '80:80'
     volumes:
