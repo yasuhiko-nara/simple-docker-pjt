@@ -9,6 +9,7 @@ services:
     volumes:
       - './app:/usr/src/app'
       - usr/src/app/node_modules
+      # https://castaneai.hatenablog.com/entry/2019/01/29/151257
 
   web:
     image: nginx:latest #nginx:alpilneだとエラーが起きる
