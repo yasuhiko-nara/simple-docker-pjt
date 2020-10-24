@@ -6,9 +6,9 @@ services:
     container_name: express-app
     ports:
       - '3000:3000'
-    volumes:
-      - './app:/usr/src/app'
-      - /app/node_modules
+    # volumes:
+    #   - './app:/usr/src/app'
+    #   - /app/node_modules
 
   web:
     image: nginx:latest #nginx:alpilneだとエラーが起きる
