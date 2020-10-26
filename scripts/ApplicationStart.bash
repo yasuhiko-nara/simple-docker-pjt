@@ -1,6 +1,6 @@
 #!/bin/bash -e
-source ~/.bash_profile
+# source ~/.bash_profile
 
 cd /home/ec2-user/simple-docker-pjt
 
-touch test.text
+docker-compose up
